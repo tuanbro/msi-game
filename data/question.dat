@@ -1,0 +1,46 @@
+q.a=5|4|7|3|4|4|5
+q1=Những lỗi nào trên main thường bị các hãng sản\nxuất MB từ chối bảo hành?
+q1.a1=Nổ tụ điện|30
+q1.a2=Bo mạch bị rỉ sét\nhoặc oxi hoá|25
+q1.a3=Bo mạch bị trầy|18
+q1.a4=Các linh kiện trên\nmain bị hư hỏng|16
+q1.a5=Cong chân socket|11
+
+q2=Lí do các chủ phòng game net chọn Mainboard\nvà VGA của MSI?
+q2.a1=Chất lượng bền bỉ|29
+q2.a2=Bảo hành ưu việt|27
+q2.a3=Giá thành hợp lí|23
+q2.a4=Thương hiệu uy tín|21
+
+q3=Nêu các dòng sản phẩm MSI đã có mặt tại thị\ntrường Việt Nam
+q3.a1=Mainboard|21
+q3.a2=Card màn hình|18
+q3.a3=Bàn Phím|17
+q3.a4=Laptop|15
+q3.a5=Chuột|11
+q3.a6=Tai Nghe|9
+q3.a7=Màn Hình|9
+
+q4=Vì sao có thể khẳng định MSI là một trong\nnhững hãng đi đầu về dich vụ?
+q4.a1=DOA 90 ngày\n(tính theo tem NPP)|41
+q4.a2=Không lo cháy nổ\nMainboard|35
+q4.a3=Hotline hỗ trợ\nkĩ thuật|24
+
+q5=Theo bạn, máy khởi động không lên thường\ndo lỗi cơ bản nào?
+q5.a1=RAM|32
+q5.a2=VGA|24
+q5.a3=CPU|21
+q5.a4=BOOST|13
+
+q6=Đèn báo nhận diện lỗi hệ thống của các hãng\nsản xuất MB thường có trên chipset nào?
+q6.a1=H270|31
+q6.a2=Z270|27
+q6.a3=X299|21
+q6.a4=X399|13
+
+q7=Chủ phòng net thường làm gì để cạnh tranh\nvới các phòng trong khu vực?
+q7.a1=Cấu hình cạnh tranh|34
+q7.a2=Không gian bắt mắt|29
+q7.a3=Dịch vụ ăn uống\nchất lượng|17
+q7.a4=PR/quảng cáo để tiếp\ncận được nhiều\ngame thủ hơn|11
+q7.a5=Giải đấu để tạo\ncộng đồng game thủ|9
