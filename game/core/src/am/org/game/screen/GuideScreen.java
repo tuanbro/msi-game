@@ -11,6 +11,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import am.org.game.GameStatus;
 import am.org.game.MainGame;
+import am.org.game.util.GameUtil;
 
 public class GuideScreen extends MyScreen{
     private Texture _img;
@@ -33,12 +34,13 @@ public class GuideScreen extends MyScreen{
     @Override
     public boolean keyDown(int keycode) {
         if (MainGame.GAME_STATUS == GameStatus.GUIDE) {
-            if (Keys.NUM_1 <= keycode && keycode < (Keys.NUM_1 + AnswerScreen._questions.size())) {
+            if(GameUtil.isQuestion(keycode)) {
                 _sQuestion.play();
                 MainGame.GAME_STATUS = GameStatus.ANSWER;
-                AnswerScreen.QUESTION = keycode - Keys.NUM_1;
                 return true;
-            } else if (keycode == Keys.F2) {
+            }
+            
+            if (keycode == Keys.F2) {
                 MainGame.GAME_STATUS = GameStatus.START;
             }
         }

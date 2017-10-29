@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 import am.org.game.MainGame;
+import am.org.game.util.GameUtil;
 import am.org.game.GameStatus;
 
 public class StartScreen extends MyScreen {
@@ -36,14 +37,14 @@ public class StartScreen extends MyScreen {
     @Override
     public boolean keyDown(int keycode) {
         if (MainGame.GAME_STATUS == GameStatus.START) {
-            if (Keys.NUM_1 <= keycode && keycode < (Keys.NUM_1 + AnswerScreen._questions.size())) {
+            if(GameUtil.isQuestion(keycode)) {
                 _sQuestion.play();
                 MainGame.GAME_STATUS = GameStatus.ANSWER;
-                AnswerScreen.QUESTION = keycode - Keys.NUM_1;
                 return true;
-            } else if (keycode == Keys.F1) {
+            }
+            
+            if (keycode == Keys.F1) {
                 MainGame.GAME_STATUS = GameStatus.GUIDE;
-                return false;
             } else if (keycode == Keys.F2) {
                 _sCorrect.play();
             } else if (keycode == Keys.F3) {

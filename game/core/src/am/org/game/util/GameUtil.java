@@ -3,6 +3,10 @@ package am.org.game.util;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.badlogic.gdx.Input.Keys;
+
+import am.org.game.screen.AnswerScreen;
+
 public class GameUtil {
 	static Map<Integer, int[]> ANSWER_DEFAULT_POSITION = new HashMap<Integer, int[]>();
 	static {
@@ -19,4 +23,18 @@ public class GameUtil {
 	public static int[] getDefaultAnswerPosition(int ID){
 		return ANSWER_DEFAULT_POSITION.get(ID);
 	}
+
+    public static boolean isQuestion(int keycode) {
+        int size = AnswerScreen._questions.size();
+        int keyStep = -1;
+        if(Keys.NUM_1 <= keycode && keycode < (Keys.NUM_1 + size)) {
+            keyStep = Keys.NUM_1;
+        } else if(size > 9 && (Keys.NUMPAD_1 <= keycode && keycode < (Keys.NUMPAD_1 + size - 9))) {
+            keyStep = Keys.NUMPAD_1 - 9;
+        } else {
+            return false;
+        }
+        AnswerScreen.QUESTION = keycode - keyStep;
+        return true;
+    }
 }
